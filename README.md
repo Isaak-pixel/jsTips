@@ -1,1 +1,1 @@
-# JavaScript Tips
+# Final Project - JavaScript Tips
