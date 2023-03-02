@@ -3,6 +3,9 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   color: white;
 
+  /* Code for the background gradient
+  Credit: https://codepen.io/P1N2O/pen/pyBNzX
+  https://freefrontend.com/css-animated-backgrounds/ */
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 30s ease infinite;
@@ -33,4 +36,25 @@ h1 {
 }
 #titleColor {
   color: yellow;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border: 3px solid white;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
 }
