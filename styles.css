@@ -23,6 +23,7 @@ body {
 		background-position: 0% 50%;
 	}
 }
+/*End of background code*/
 
 strong, h2 {
   font-family: "Lucida Console", "Courier New", monospace;
@@ -36,6 +37,15 @@ h1 {
 }
 #titleColor {
   color: yellow;
+}
+
+#row1 {
+  display: flex;
+}
+
+#row1 > div {
+  flex-grow: 1;
+  margin: 30px;
 }
 
 .button {
