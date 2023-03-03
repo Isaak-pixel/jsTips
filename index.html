@@ -4,22 +4,57 @@
     <meta charset="utf-8">
     <title>js Tips</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="scripts.js">
+
+    </script>
   </head>
   <body>
     <h1>.<span id= "titleColor">j</span>s <span id= "titleColor">T</span>ips</h1>
 
     <h2>What is this site?</h2>
 
-    <h2>The let Variable</h2>
-    <p>The <strong>let</strong> keyword is used to declare variables that are block-scoped, meaning that they
-    are only accessible within the block of code in which they are defined. <strong>let</strong> is similar
-    to <strong>var</strong>, but it is subject to the rules of block scoping, whereas var is function-scoped.</p>
-    <button type="button" class="button">let Example</button>
+    <div id="row1">
+      <div>
+        <h2>The let Variable</h2>
+        <p>The <strong>let</strong> keyword is used to declare variables that are block-scoped, meaning that they
+        are only accessible within the block of code in which they are defined. <strong>let</strong> is similar
+        to <strong>var</strong>, but it is subject to the rules of block scoping, whereas var is function-scoped.</p>
+        <button type="button" class="button" onclick="letExample()">let Example</button>
+        <div id="letOutput"></div>
+      </div>
 
-      <h2>The const Variable</h2>
-      <p>The <strong>const</strong> keyword is used to declare variables that are read-only, meaning that they
-      cannot be reassigned after they are declared. This makes <strong>const</strong> a useful tool for
-      preventing unintended changes to variables in your code.</p>
-      <button type="button" class="button">const Example</button>
+      <div>
+        <h2>The const Variable</h2>
+        <p>The <strong>const</strong> keyword is used to declare variables that are read-only, meaning that they
+        cannot be reassigned after they are declared. This makes <strong>const</strong> a useful tool for
+        preventing unintended changes to variables in your code.</p>
+        <button type="button" class="button" onclick="constExample()">const Example</button>
+        <div id="constOutput"></div>
+      </div>
+    </div>
+
+
+      <h2>Arithmetic Operators</h2>
+      <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
+
+      <h3>Addition</h3>
+      <p>The addition operator (+) adds numbers</p>
+      <button type="button" class="button" onclick="addExample()">const Example</button>
+      <div id="addOutput"></div>
+
+      <h3>Subtraction</h3>
+      <p>The subtraction operator (-) subtracts numbers</p>
+      <button type="button" class="button" onclick="subExample()">const Example</button>
+      <div id="subOutput"></div>
+
+      <h3>Multiplication</h3>
+      <p>The multiplication operator (*) multiplies numbers</p>
+      <button type="button" class="button" onclick="multExample()">const Example</button>
+      <div id="multOutput"></div>
+
+      <h3>Division</h3>
+      <p>The divison operator (/) divides numbers</p>
+      <button type="button" class="button" onclick="DiviExample()">const Example</button>
+      <div id="diviOutput"></div>
   </body>
 </html>
