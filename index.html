@@ -13,18 +13,18 @@
 
     <h2>What is this site?</h2>
 
-    <div id="row1">
-      <div>
-        <h2>The let Variable</h2>
-        <p>The <strong>let</strong> keyword is used to declare variables that are block-scoped, meaning that they
-        are only accessible within the block of code in which they are defined. <strong>let</strong> is similar
+    <div id="row">
+      <div id="column">
+        <h3>The let Variable</h3>
+        <p>The <strong>let</strong> keyword is used to declare variables that are block-scoped. They
+        are only useable within the block of code in which they are defined. <strong>let</strong> is similar
         to <strong>var</strong>, but it is subject to the rules of block scoping, whereas var is function-scoped.</p>
         <button type="button" class="button" onclick="letExample()">let Example</button>
         <div id="letOutput"></div>
       </div>
 
-      <div>
-        <h2>The const Variable</h2>
+      <div id="column">
+        <h3>The const Variable</h3>
         <p>The <strong>const</strong> keyword is used to declare variables that are read-only, meaning that they
         cannot be reassigned after they are declared. This makes <strong>const</strong> a useful tool for
         preventing unintended changes to variables in your code.</p>
@@ -33,28 +33,38 @@
       </div>
     </div>
 
+    <h2>Arithmetic Operators</h2>
+    <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
 
-      <h2>Arithmetic Operators</h2>
-      <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
+    <div id="row">
+      <div id="column">
+        <h3>Addition</h3>
+        <p>The addition operator (+) adds numbers. For example it if x = 5 and y = 8, then x + y = 13</p>
+        <button type="button" class="button" onclick="addExample()">const Example</button>
+        <div id="addOutput"></div>
+      </div>
 
-      <h3>Addition</h3>
-      <p>The addition operator (+) adds numbers</p>
-      <button type="button" class="button" onclick="addExample()">const Example</button>
-      <div id="addOutput"></div>
+      <div id="column">
+        <h3>Subtraction</h3>
+        <p>The subtraction operator (-) subtracts numbers. For example it if x = 8 and y = 5, then x - y = 5</p>
+        <button type="button" class="button" onclick="subExample()">const Example</button>
+        <div id="subOutput"></div>
+      </div>
+    </div>
 
-      <h3>Subtraction</h3>
-      <p>The subtraction operator (-) subtracts numbers</p>
-      <button type="button" class="button" onclick="subExample()">const Example</button>
-      <div id="subOutput"></div>
+    <div id="row">
+      <div id="column">
+        <h3>Multiplication</h3>
+        <p>The multiplication operator (*) multiplies numbers. For example it if x = 5 and y = 8, then x * y = 60</p>
+        <button type="button" class="button" onclick="multExample()">const Example</button>
+        <div id="multOutput"></div>
+      </div>
 
-      <h3>Multiplication</h3>
-      <p>The multiplication operator (*) multiplies numbers</p>
-      <button type="button" class="button" onclick="multExample()">const Example</button>
-      <div id="multOutput"></div>
-
-      <h3>Division</h3>
-      <p>The divison operator (/) divides numbers</p>
-      <button type="button" class="button" onclick="DiviExample()">const Example</button>
-      <div id="diviOutput"></div>
+      <div id="column">
+        <h3>Division</h3>
+        <p>The divison operator (/) divides numbers. For example it if x = 8 and y = 4, then x / y = 2</p>
+        <button type="button" class="button" onclick="DiviExample()">const Example</button>
+        <div id="diviOutput"></div>
+      </div>
   </body>
 </html>
