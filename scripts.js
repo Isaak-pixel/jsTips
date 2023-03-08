@@ -38,7 +38,9 @@ const addExample = () => {
     yAdd = 4;
     errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 4.</p>`);
   }
-    addOutput.innerHTML = (errorMessage + errorMessage2 +`<p>x = ${xAdd}, y = ${yAdd}</p> <p>${xAdd} + ${yAdd} = ${xAdd + yAdd}</p>`);
+    //Calculating the + equation and output it.
+    //Display error message(s) if there are any.
+    addOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xAdd}, y = ${yAdd}</p> <p>${xAdd} + ${yAdd} = ${xAdd + yAdd}</p>`);
 }
 
 const subExample = () => {
@@ -54,7 +56,45 @@ const subExample = () => {
     ySub = 5;
     errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 5.</p>`);
   }
-    subOutput.innerHTML = (errorMessage + errorMessage2 +`<p>x = ${xSub}, y = ${ySub}</p> <p>${xSub} + ${ySub} = ${xSub + ySub}</p>`);
+    //Calculating the - equation and output it.
+    //Display error message(s) if there are any.
+    subOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xSub}, y = ${ySub}</p> <p>${xSub} - ${ySub} = ${xSub - ySub}</p>`);
+}
+
+const multExample = () => {
+  xMult = prompt("Enter in a number for x please.");
+  if (isNaN(xMult) || xMult == "")
+  {
+    xMult = 8;
+    errorMessage = (`<p class="returnStyle">Number not entered for x, defaulting to 8.</p>`);
+  }
+  yMult = prompt("Enter in a number for y please.");
+  if (isNaN(yMult) || yMult == "")
+  {
+    yMult = 3;
+    errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 3.</p>`);
+  }
+    //Calculating the * equation and output it.
+    //Display error message(s) if there are any.
+    multOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xMult}, y = ${yMult}</p> <p>${xMult} * ${yMult} = ${xMult * yMult}</p>`);
+}
+
+const divExample = () => {
+  xDiv = prompt("Enter in a number for x please.");
+  if (isNaN(xDiv) || xDiv == "")
+  {
+    xDiv = 10;
+    errorMessage = (`<p class="returnStyle">Number not entered for x, defaulting to 10.</p>`);
+  }
+  yDiv = prompt("Enter in a number for y please.");
+  if (isNaN(yDiv) || yDiv == "")
+  {
+    yDiv = 2;
+    errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 2.</p>`);
+  }
+    //Calculating the / equation and output it. Shorten the answer to 3 decimal places so that its not a large num.
+    //Display error message(s) if there are any.
+    divOutput.innerHTML = (errorMessage + errorMessage2 +`<p>x = ${xDiv}, y = ${yDiv}</p> <p>${xDiv} / ${yDiv} = ${(xDiv / yDiv).toFixed(3)}</p>`);
 }
 
 console.log("If you can see this, than all of your code ran properly!");
