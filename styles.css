@@ -82,3 +82,12 @@ div > div {
   background-color: white;
   color: black;
 }
+
+/* Center text when screen size is small enough*/
+@media only screen and (max-width: 1530px) {
+  #column {
+    width: 100%;
+    text-align: center;
+
+  }
+}
