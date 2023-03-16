@@ -26,13 +26,15 @@ const constExample = () => {
 }
 
 const addExample = () => {
-  xAdd = prompt("Enter in a number for x please.");
+  errorMessage = ("");
+  errorMessage2 = ("");
+  xAdd = Number(prompt("Enter in a number for x please."));
   if (isNaN(xAdd) || xAdd == "")
   {
     xAdd = 4;
     errorMessage = (`<p class="returnStyle">Number not entered for x, defaulting to 4.</p>`);
   }
-  yAdd = prompt("Enter in a number for y please.");
+  yAdd = Number(prompt("Enter in a number for y please."));
   if (isNaN(yAdd) || yAdd == "")
   {
     yAdd = 4;
@@ -40,6 +42,7 @@ const addExample = () => {
   }
     //Calculating the + equation and output it.
     //Display error message(s) if there are any.
+    addOutput.innerHTML = ("a");
     addOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xAdd}, y = ${yAdd}</p> <p>${xAdd} + ${yAdd} = ${xAdd + yAdd}</p>`);
 }
 
