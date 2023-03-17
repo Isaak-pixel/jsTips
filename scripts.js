@@ -100,4 +100,22 @@ const divExample = () => {
     divOutput.innerHTML = (errorMessage + errorMessage2 +`<p>x = ${xDiv}, y = ${yDiv}</p> <p>${xDiv} / ${yDiv} = ${(xDiv / yDiv).toFixed(3)}</p>`);
 }
 
+const gtExample = () => {
+  xGT = prompt("Enter in a number for x please.");
+  if (isNaN(xGT) || xGT == "")
+  {
+    xGT = 8;
+    errorMessage = (`<p class="returnStyle">Number not entered for x, defaulting to 8.</p>`);
+  }
+  yGT = prompt("Enter in a number for y please.");
+  if (isNaN(yGT) || yGT == "")
+  {
+    yGT = 4;
+    errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 4.</p>`);
+  }
+    //Calculating the * equation and output it.
+    //Display error message(s) if there are any.
+    gtOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xGT}, y = ${yGT}</p> <p>${xGT} > ${yGT} is ${xGT > yGT}</p>`);
+}
+
 console.log("If you can see this, than all of your code ran properly!");
