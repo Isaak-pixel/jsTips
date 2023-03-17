@@ -28,6 +28,7 @@ const constExample = () => {
 const addExample = () => {
   errorMessage = ("");
   errorMessage2 = ("");
+
   xAdd = Number(prompt("Enter in a number for x please."));
   if (isNaN(xAdd) || xAdd == "")
   {
@@ -42,11 +43,13 @@ const addExample = () => {
   }
     //Calculating the + equation and output it.
     //Display error message(s) if there are any.
-    addOutput.innerHTML = ("a");
     addOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xAdd}, y = ${yAdd}</p> <p>${xAdd} + ${yAdd} = ${xAdd + yAdd}</p>`);
 }
 
 const subExample = () => {
+  errorMessage = ("");
+  errorMessage2 = ("");
+
   xSub = prompt("Enter in a number for x please.");
   if (isNaN(xSub) || xSub == "")
   {
@@ -65,6 +68,9 @@ const subExample = () => {
 }
 
 const multExample = () => {
+  errorMessage = ("");
+  errorMessage2 = ("");
+
   xMult = prompt("Enter in a number for x please.");
   if (isNaN(xMult) || xMult == "")
   {
@@ -83,6 +89,9 @@ const multExample = () => {
 }
 
 const divExample = () => {
+  errorMessage = ("");
+  errorMessage2 = ("");
+
   xDiv = prompt("Enter in a number for x please.");
   if (isNaN(xDiv) || xDiv == "")
   {
@@ -101,6 +110,9 @@ const divExample = () => {
 }
 
 const gtExample = () => {
+  errorMessage = ("");
+  errorMessage2 = ("");
+  
   xGT = prompt("Enter in a number for x please.");
   if (isNaN(xGT) || xGT == "")
   {
