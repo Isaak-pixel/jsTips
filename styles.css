@@ -27,7 +27,7 @@ body {
 
 h2 {
   font-family: "Lucida Console", "Courier New", monospace;
-  color: black;
+  color: yellow;
 }
 
 strong {
@@ -40,6 +40,22 @@ h1 {
   color: white;
   font-size: 300%;
 }
+
+.box {
+  background-color: #0d0d0d;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 50px 5px;
+}
+
+.box2 {
+  background-color: #0d0d0d;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 50px 300px;
+  margin-top: 100px;
+}
+
 #titleColor {
   color: yellow;
   font-size: 150%;
