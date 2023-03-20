@@ -46,6 +46,32 @@ h1 {
   font-size: 300%;
 }
 
+a {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 125%;
+  margin: 20px;
+}
+
+/* Unvisited link */
+a:link {
+  color: white;
+}
+
+/* Visited link */
+a:visited {
+  color: white;
+}
+
+/* Mouseover link */
+a:hover {
+  color: yellow;
+}
+
+/* Selected link */
+a:active {
+  color: blue;
+}
+
 .box {
   background-color: #0d0d0d;
   padding: 10px;
