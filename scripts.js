@@ -151,4 +151,25 @@ const ltExample = () => {
     ltOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xLT}, y = ${yLT}</p> <p>${xLT} < ${yLT} is ${xLT < yLT}</p>`);
 }
 
-console.log("If you can see this, than all of your code ran properly!");
+const etExample = () => {
+  errorMessage = ("");
+  errorMessage2 = ("");
+
+  xET = prompt("Enter in a number for x please.");
+  if (isNaN(xET) || xET == "")
+  {
+    xET = 8;
+    errorMessage = (`<p class="returnStyle">Number not entered for x, defaulting to 8.</p>`);
+  }
+  yET = prompt("Enter in a number for y please.");
+  if (isNaN(yET) || yET == "")
+  {
+    yET = 4;
+    errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 4.</p>`);
+  }
+    //Calculating the * equation and output it.
+    //Display error message(s) if there are any.
+    etOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xET}, y = ${yET}</p> <p>${xET} == ${yET} is ${xET == yET}</p>`);
+}
+
+console.log("If you can see this, than all of the code ran properly with no errors!");
