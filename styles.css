@@ -130,6 +130,10 @@ div > div {
   color: black;
 }
 
+footer {
+  padding: 10px;
+}
+
 /* Center text when screen size is small enough*/
 @media only screen and (max-width: 1530px) {
   #column {
