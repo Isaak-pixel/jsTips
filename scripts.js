@@ -112,7 +112,7 @@ const divExample = () => {
 const gtExample = () => {
   errorMessage = ("");
   errorMessage2 = ("");
-  
+
   xGT = prompt("Enter in a number for x please.");
   if (isNaN(xGT) || xGT == "")
   {
@@ -128,6 +128,27 @@ const gtExample = () => {
     //Calculating the * equation and output it.
     //Display error message(s) if there are any.
     gtOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xGT}, y = ${yGT}</p> <p>${xGT} > ${yGT} is ${xGT > yGT}</p>`);
+}
+
+const ltExample = () => {
+  errorMessage = ("");
+  errorMessage2 = ("");
+
+  xLT = prompt("Enter in a number for x please.");
+  if (isNaN(xLT) || xLT == "")
+  {
+    xLT = 8;
+    errorMessage = (`<p class="returnStyle">Number not entered for x, defaulting to 8.</p>`);
+  }
+  yLT = prompt("Enter in a number for y please.");
+  if (isNaN(yLT) || yLT == "")
+  {
+    yLT = 4;
+    errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 4.</p>`);
+  }
+    //Calculating the * equation and output it.
+    //Display error message(s) if there are any.
+    ltOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xLT}, y = ${yLT}</p> <p>${xLT} < ${yLT} is ${xLT < yLT}</p>`);
 }
 
 console.log("If you can see this, than all of your code ran properly!");
