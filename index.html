@@ -18,27 +18,36 @@
 
     </div>
 
-    <div id="row">
-      <div id="column">
-        <h3>The let Variable</h3>
-        <p>The <strong>let</strong> keyword is used to declare variables that are block-scoped. They
-        are only useable within the block of code in which they are defined. <strong>let</strong> is similar
-        to <strong>var</strong>, but it is subject to the rules of block scoping, whereas var is function-scoped.</p>
-        <button type="button" class="button" onclick="letExample()">let Example</button>
-        <div id="letOutput"></div>
-      </div>
+    <div class="box">
+      <h2>Jump to a Section!</h2>
+      <a href="#letConst">let and const</a>
+      <a href="#arithmetic">Arithmetic</a>
+      <a href="#comparison">Comparison</a>
 
-      <div id="column">
-        <h3>The const Variable</h3>
-        <p>The <strong>const</strong> keyword is used to declare variables that are read-only, meaning that they
-        cannot be reassigned after they are declared. This makes <strong>const</strong> a useful tool for
-        preventing unintended changes to variables in your code.</p>
-        <button type="button" class="button" onclick="constExample()">const Example</button>
-        <div id="constOutput"></div>
-      </div>
     </div>
 
-    <div class="box2">
+    <div id="letConst"></div>
+      <div id="row" >
+        <div id="column">
+          <h3>The let Variable</h3>
+          <p>The <strong>let</strong> keyword is used to declare variables that are block-scoped. They
+          are only useable within the block of code in which they are defined. <strong>let</strong> is similar
+          to <strong>var</strong>, but it is subject to the rules of block scoping, whereas var is function-scoped.</p>
+          <button type="button" class="button" onclick="letExample()">let Example</button>
+          <div id="letOutput"></div>
+        </div>
+
+        <div id="column">
+          <h3>The const Variable</h3>
+          <p>The <strong>const</strong> keyword is used to declare variables that are read-only, meaning that they
+          cannot be reassigned after they are declared. This makes <strong>const</strong> a useful tool for
+          preventing unintended changes to variables in your code.</p>
+          <button type="button" class="button" onclick="constExample()">const Example</button>
+          <div id="constOutput"></div>
+        </div>
+      </div>
+
+    <div id="arithmetic" class="box2">
       <h2>Arithmetic Operators</h2>
       <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
     </div>
@@ -75,7 +84,7 @@
       </div>
     </div>
 
-    <div class="box2">
+    <div class="box2" id="comparison">
       <h2>Comparison Operators</h2>
       <p>Comparison operators are used in logical statements to determine equality or difference between variables or values.
       They return only <strong>true</strong> and <strong>false</strong>.</p>
@@ -115,8 +124,10 @@
       </div>
     </div>
 
-    <h2>About Me</h2>
-    <p>Work in progress content</p>
+    <div class="box2">
+      <h2>About Me</h2>
+      <p>Work in progress content</p>
+    </div>
 
     <footer>Made with love by Isaak Dyck - 2023 <3</footer>
   </body>
