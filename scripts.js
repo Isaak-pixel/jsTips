@@ -172,4 +172,25 @@ const etExample = () => {
     etOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xET}, y = ${yET}</p> <p>${xET} == ${yET} is ${xET == yET}</p>`);
 }
 
+const netExample = () => {
+  errorMessage = ("");
+  errorMessage2 = ("");
+
+  xNET = prompt("Enter in a number for x please.");
+  if (isNaN(xNET) || xNET == "")
+  {
+    xNET = 8;
+    errorMessage = (`<p class="returnStyle">Number not entered for x, defaulting to 8.</p>`);
+  }
+  yNET = prompt("Enter in a number for y please.");
+  if (isNaN(yNET) || yNET == "")
+  {
+    yNET = 4;
+    errorMessage2 = (`<p class="returnStyle">Number not entered for y, defaulting to 4.</p>`);
+  }
+    //Calculating the * equation and output it.
+    //Display error message(s) if there are any.
+    netOutput.innerHTML = (errorMessage + errorMessage2 + `<p>x = ${xNET}, y = ${yNET}</p> <p>${xNET} != ${yNET} is ${xNET != yNET}</p>`);
+}
+
 console.log("If you can see this, than all of the code ran properly with no errors!");
